@@ -1,0 +1,862 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.frontimg{
+    max-width: 100%;
+}
+
+body{
+    background-image: url(../images/degrade.gif);
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    header{
+       display: grid;
+       grid-template-columns: 1fr 20fr;
+       flex-direction: column; 
+       background-color: rgba(25,26,28,255);
+       position: sticky;
+       grid-template-areas: "coldplay title";
+       .coldplay{
+           grid-area: "coldplay";
+           .logo{
+                width: 9rem;
+                margin: auto;
+            }
+       }
+       .title{
+        grid-area: "title";
+             h1{
+                color: white;
+                background-color:rgba(25,26,28,255) ;
+                font-size: 20px;
+                padding: 0%;
+                margin: 0%;
+                font-family: "Lora", Serif;
+                letter-spacing: 1cm;
+                font-style: normal;
+            }
+       }
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 12%;
+        background-color: #fffefe;
+        order: 1;
+        margin: 10px;
+        ul{
+            text-align: right;
+            li{
+                display: inline;
+                color: black;
+                text-align: right;
+                margin: 10px; 
+                .nav1:hover{
+                    background-color: rgb(255, 142, 62);
+                    border:solid #fffefe; 
+                    border-radius: 20%;
+                    a{
+                        color: black;
+                        font-size: 20px;
+                        margin: 10px;
+                        padding: 10px; 
+                        text-decoration: none;
+                    }
+                }
+                .nav2:hover{
+                    background-color: rgb(37, 255, 215);
+                    border:solid #fffefe; 
+                    border-radius: 20%;
+                    a{
+                        color: black;
+                        font-size: 20px;
+                        margin: 10px;
+                        padding: 10px; 
+                        text-decoration: none;
+                    }
+                }
+                .nav3:hover{
+                    background-color: rgb(19, 254, 19);
+                    border:solid #fffefe; 
+                    border-radius: 20%;
+                    a{
+                        color: black;
+                        font-size: 20px;
+                        margin: 10px;
+                        padding: 10px; 
+                        text-decoration: none;
+                    }
+                }
+                .nav4:hover{
+                    background-color: rgb(0, 72, 255);
+                    border:solid #fffefe; 
+                    border-radius: 20%;
+                    a{
+                        color: black;
+                        font-size: 20px;
+                        margin: 10px;
+                        padding: 10px;
+                        text-decoration: none;
+                    }
+                }
+                .nav5:hover{
+                    background-color: rgb(255, 251, 20);
+                    border:solid #fffefe; 
+                    border-radius: 20%;
+                    a{
+                        color: black;
+                        font-size: 20px;
+                        margin: 10px;
+                        padding: 10px; 
+                        text-decoration: none;
+                    }
+                }
+                .nav6:hover{
+                    background-color: rgb(255, 20, 169);
+                    border:solid #fffefe; 
+                    border-radius: 20%;
+                    a{
+                        color: black;
+                        font-size: 20px;
+                        margin: 10px;
+                        padding: 10px; 
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+
+                
+        }
+    }
+    
+    h2{
+        color: black;
+        padding: 2.5px;
+        margin:20px;
+        text-align: center;
+        max-width: 100%; 
+    }
+
+    .news{
+        padding: 5%;
+        margin-bottom: 10%;
+        justify-content: space-between;
+       .n1{
+           display: grid;
+           grid-template-columns: 1fr 2fr;
+           grid-template-rows: 50px 300px;
+           grid-template-areas:
+           "noticia1 titulon1"
+           "noticia1 p1";
+            .noticia1{
+                grid-area: noticia1;
+                } 
+            .titulon1{
+                 grid-area: titulon1;
+                }
+            .p1{
+                grid-area: p1;
+                p{
+                    padding: 20PX;
+                    line-height: 1.5;
+                    font-size: 60px;
+                }
+                }
+        }
+        .n1:hover{
+            border: solid #fffefe 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius:  10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 10);
+            background-color: #fffefe;
+        }
+        .n2{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 50px 300px;
+            grid-template-areas:
+            "noticia2 titulon2"
+            "noticia2 p2";
+            gap: 10px;
+            .noticia2{
+                grid-area: noticia2;
+                }
+            .titulon2{
+                grid-area: titulon2;
+                }
+            .p2{
+                grid-area: p2;
+                p{
+                    padding: 20PX;
+                    line-height: 1.5;
+                    font-size: 60px;  
+                }
+            }
+        }
+        .n2:hover{
+            border: solid #fffefe 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius:  10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 10);
+            background-color: #fffefe;
+        }
+        .n3{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 50px 300px;
+            grid-template-areas:
+            "noticia3 titulon3"
+            "noticia3 p3";
+            .noticia3{
+                grid-area: noticia3;
+            }
+            .titulon3{
+                grid-area: titulon3;
+            }
+            .p3{
+                grid-area: p3;
+                p{
+                    padding: 20PX;
+                    line-height: 1.5;
+                    font-size: 60px;
+                }
+            }
+        }
+        .n3:hover{
+            border: solid #fffefe 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius:  10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 10);
+            background-color: #fffefe;
+        }
+        
+        
+    }
+    footer{
+        background-color: #111010;
+        color: #fffefe;
+        font-style: initial;
+        
+        .youtube{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .logocontacto{
+                width: 25px;
+            }
+            .redsocial{
+                font-size: 15px;
+                color: #fffefe;
+                font-weight: 300;
+                text-decoration: none;
+            }
+        }
+        .instagram{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .logocontacto{
+                width: 25px;
+            }
+            .redsocial{
+                font-size: 15px;
+                color: #fffefe;
+                font-weight: 300;
+                text-decoration: none;
+            }
+        }
+    }
+    
+        
+}
+
+
+/*TOUR*/
+
+.planeta{
+    position: fixed;
+    bottom: 7%;
+    left: 2%;
+    width: 150px;
+    order: 1;
+    .sust{
+        position: fixed;
+        left: 1%;
+        bottom: 0%;
+    }
+}
+
+.manos{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    width: 160px;
+    order: 1;
+    .inclusivity{
+        position: fixed;
+        right: 1%;
+        bottom: 0%;
+    }
+}
+
+.tour{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    .date1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d1 place1 status1";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d1{
+            grid-area: d1;
+        }
+        .place1{
+            grid-area: place1;
+        }
+        .status1{
+            grid-area: status1;
+        }
+    }
+    .date2{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d2 place2 status2";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d2{
+            grid-area: d2;
+        }
+        .place2{
+            grid-area: place2;
+        }
+        .status2{
+            grid-area: status2;
+        }
+    }
+    .date3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d3 place3 status3";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d3{
+            grid-area: d3;
+        }
+        .place3{
+            grid-area: place3;
+        }
+        .status3{
+            grid-area: status3;
+        }
+    }
+    .date4{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d4 place4 status4";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d4{
+            grid-area: d4;
+        }
+        .place4{
+            grid-area: place4;
+        }
+        .status4{ 
+            grid-area: status4;
+        }
+    }
+    .date5{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d5 place5 status5";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d5{
+            grid-area: d5;
+        }
+        .place5{
+            grid-area: place5;
+        }
+        .status5{
+            grid-area: status5;
+        }
+    }
+    .date6{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d6 place6 status6";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d6{
+            grid-area: d6;
+        }
+        .place6{
+            grid-area: place6;
+        }
+        .status6{
+            grid-area: status6;
+        }
+    }
+    .date7{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d7 place7 status7";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d7{
+            grid-area: d7;
+        }
+        .place7{
+            grid-area: place7;
+        }
+        .status7{
+            grid-area: status7;
+        }
+    }
+    .date8{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d8 place8 status8";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d8{
+            grid-area: d8;
+        }
+        .place8{
+            grid-area: place8;
+        }
+        .status8{
+            grid-area: status8;
+        }
+    }
+    .date9{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d9 place9 status9";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d9{
+            grid-area: d9;
+        }
+        .place9{
+            grid-area: place9;
+        }
+        .status9{
+            grid-area: status9;
+        }
+    }
+    .date10{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d10 place10 status10";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d10{
+            grid-area: d10;
+        }
+        .place10{
+            grid-area: place10;
+        }
+        .status10{
+            grid-area: status10;
+        }
+    }
+    .date11{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d11 place11 status11";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d11{
+            grid-area: d11;
+        }
+        .place11{
+            grid-area: place11;
+        }
+        .status11{
+            grid-area: status11;
+        }
+    }
+    .date12{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d12 place12 status12";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d12{
+            grid-area: d12;
+        }
+        .place12{
+            grid-area: d12;
+        }
+        .status12{
+            grid-area: d12;
+        }
+    }
+    .date13{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d13 place13 status13";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d13{
+            grid-area: d13;
+        }
+        .place13{
+            grid-area: place13;
+        }
+        .status13{
+            grid-area: status13;
+        }
+    }
+    .date14{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d14 place14 status14";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d14{
+            grid-area: d14;
+        }
+        .place14{
+            grid-area: place14;
+        }
+        .status14{
+            grid-area: status14;
+        }
+    }
+    .date15{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d15 place15 status15";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d15{
+            grid-area: d15;
+        }
+        .place15{
+            grid-area: place15;
+        }
+        .status15{
+            grid-area: status15;
+        }
+    }
+    .date16{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d16 place16 status16";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d16{
+            grid-area: d16;
+        }
+        .place16{
+            grid-area: place16;
+        }
+        .status16{
+            grid-area: status16;
+        }
+    }
+    .date17{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d17 place17 status17";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d17{
+            grid-area: d17;
+        }
+        .place17{
+            grid-area: place17;
+        }
+        .status17{
+            grid-area: status17;
+        }
+    }
+    .date18{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d18 place18 status18";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d18{
+            grid-area: d18;
+        }
+        .place18{
+            grid-area: place18;
+        }
+        .status{
+            grid-area: status18;
+        }
+    }
+    .date19{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d19 place19 status19";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d19{
+            grid-area: d19;
+        }
+        .place19{
+            grid-area: place19;
+        }
+        .status19{
+            grid-area: status19;
+        }
+    }
+    .date20{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d20 place20 status20";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d20{
+            grid-area: d20;
+        }
+        .place20{
+            grid-area: place20;
+        }
+        .status20{
+            grid-area: status20;
+        }
+    }
+    .date21{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d21 place21 status21";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d21{
+            grid-area: d21;
+        }
+        .place21{
+            grid-area: place21;
+        }
+        .status21{
+            grid-area: status21;
+        }
+    }
+    .date22{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d22 place22 status22";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d22{
+            grid-area: d22;
+        }
+        .place22{
+            grid-area: place22;
+        }
+        .status22{
+            grid-area: status22;
+        }
+    }
+    .date23{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d23 place23 status23";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d23{
+            grid-area: d23;
+        }
+        .place23{
+            grid-area: place23;
+        }
+        .status23{
+            grid-area: status23;
+        }
+    }
+    .date24{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d24 place24 status24";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d24{
+            grid-area: d24;
+        }
+        .place24{
+            grid-area: place24;
+        }
+        .status24{
+            grid-area: status24;
+        }
+    }
+    .date25{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d25 place25 status25";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d25{
+            grid-area: d25;
+        }
+        .place25{
+            grid-area: place25;
+        }
+        .status25{
+            grid-area: status25;
+        }
+    }
+    .date26{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d26 place26 status26";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d26{
+            grid-area: d26;
+        }
+        .place26{
+            grid-area: place26;
+        }
+        .status26{
+            grid-area: status26;
+        }
+    }
+    .date27{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        border: 1px solid #ccc;
+        padding: 10px;
+        grid-template-areas:  
+        "d27 place27 status27";
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
+        .d27{
+            grid-area: d27;
+        }
+        .place27{
+            grid-area: place27;
+        }
+        .status27{
+            grid-area: status27;
+        }
+    }
+
+
+}
+
+
