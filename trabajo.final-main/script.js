@@ -1,4 +1,4 @@
-/*function saludo() {
+function saludo() {
     console.log("¡Hola! Sean bienvenidos a la consola de la página oficial de Coldplay"); }
 
 saludo();
@@ -28,7 +28,7 @@ mensaje();
 /* Iniciamos los contadores*/
 
 /*Para el recuento de votos - Supongamos que tenemos estos votos */
-/*let votos = ["Si", "si", "no", "No", "si"];
+let votos = ["Si", "si", "no", "No", "si"];
 recuentoDeVotos (votos);
 
 function recuentoDeVotos (votos){
@@ -50,7 +50,7 @@ recuentoDeVotos(votos);
 
 /*productos*/
 
-/*const productos = ['buzo1', 'buzo2', 'buzo3', 'remera1', 'remera2', 'remera3'];
+const productos = ['buzo1', 'buzo2', 'buzo3', 'remera1', 'remera2', 'remera3'];
 productos.push('disco Feelslikeimfallinginlove');
 
 function tienda (){
@@ -93,7 +93,7 @@ Nombre: 'Remera 3 - Coldplay',
 Color: 'Blanco',
 Precio: '15000',
 }
-/*array es la lista con todos los productos del mercado*/
+
 
 
 
